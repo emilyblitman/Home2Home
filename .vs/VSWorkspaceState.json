@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\classSample\\todo-app",
+    "\\classSample\\todo-app\\e2e",
+    "\\classSample\\todo-app\\src\\app",
+    "\\classSample\\todoApp-angular-material\\expressServer",
+    "\\db",
+    "\\expressServer",
+    "\\mongoDB\\createDB",
+    "\\MongooseDB"
+  ],
+  "SelectedNode": "\\MongooseDB\\tsconfig.json",
+  "PreviewInSolutionExplorer": false
+}
