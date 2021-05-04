@@ -35,6 +35,13 @@ class PropertyModel {
         this.model = mongooseConnection.model<IPropertyModel>("Property", this.schema);
     }
 
+    public retrieveAllProperties(response: any): any {
+        var query = this.model.find({});
+        query.exec((err, itemArray) => {
+            response.json(itemArray);
+        });
+    }
+
     public retrievePropertyDetails(response:any, filter:Object) {
         var query = this.model.findOne(filter);
         query.exec( (err, itemArray) => {

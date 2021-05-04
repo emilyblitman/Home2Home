@@ -25,6 +25,12 @@ var PropertyModel = /** @class */ (function () {
     PropertyModel.prototype.createModel = function () {
         this.model = mongooseConnection.model("Property", this.schema);
     };
+    PropertyModel.prototype.retrieveAllProperties = function (response) {
+        var query = this.model.find({});
+        query.exec(function (err, itemArray) {
+            response.json(itemArray);
+        });
+    };
     PropertyModel.prototype.retrievePropertyDetails = function (response, filter) {
         var query = this.model.findOne(filter);
         query.exec(function (err, itemArray) {

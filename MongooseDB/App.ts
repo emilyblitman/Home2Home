@@ -9,6 +9,7 @@ import * as bodyParser from 'body-parser';
 
 import {ListModel} from './model/ListModel';
 import {TaskModel} from './model/TaskModel';
+import { PropertyModel } from './model/PropertyModel';
 //import {DataAccess} from './DataAccess';
 
 // Creates and configures an ExpressJS web server.
@@ -17,7 +18,8 @@ class App {
   // ref to Express instance
   public expressApp: express.Application;
   public Lists:ListModel;
-  public Tasks:TaskModel;
+  public Tasks: TaskModel;
+  public Properties: PropertyModel;
   public idGenerator:number;
 
   //Run configuration methods on the Express instance.
@@ -28,6 +30,7 @@ class App {
     this.idGenerator = 102;
     this.Lists = new ListModel();
     this.Tasks = new TaskModel();
+    this.Properties = new PropertyModel();
   }
 
   // Configure Express middleware.
@@ -69,6 +72,11 @@ class App {
         console.log('Query All list');
         this.Lists.retrieveAllLists(res);
     });
+
+    //router.get('/app/properties/', (req, res) => {
+    //    console.log('Query All properties');
+    //    this.Properties.retrieveAllProperties(res);
+    //});
 
     router.get('/app/listcount', (req, res) => {
       console.log('Query the number of list elements in db');
