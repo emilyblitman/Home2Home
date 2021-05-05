@@ -3,7 +3,8 @@ db.createCollection('properties')
 listsCollection = db.getCollection("properties")
 listsCollection.remove({})
 listsCollection.insert(
-{
+	{
+		propertyId: 123,
 		propertyName: "Ryans House",
 		description: "Seattle House",
 		bedrooms: 3,
@@ -14,7 +15,8 @@ listsCollection.insert(
 }
 )
 listsCollection.insert(
-{
+	{
+		propertyId: 345,
 		propertyName: "Jeffs House",
 		description: "Seattle House",
 		bedrooms: 2,

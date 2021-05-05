@@ -61,10 +61,10 @@ var App = /** @class */ (function () {
             console.log('Query All list');
             _this.Lists.retrieveAllLists(res);
         });
-        //router.get('/app/properties/', (req, res) => {
-        //    console.log('Query All properties');
-        //    this.Properties.retrieveAllProperties(res);
-        //});
+        router.get('/app/properties/', function (req, res) {
+            console.log('Query All properties');
+            _this.Properties.retrieveAllProperties(res);
+        });
         router.get('/app/listcount', function (req, res) {
             console.log('Query the number of list elements in db');
             _this.Lists.retrieveListCount(res);
