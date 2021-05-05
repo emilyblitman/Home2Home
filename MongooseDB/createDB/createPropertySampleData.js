@@ -48,3 +48,33 @@ reviewsCollection.insert(
 	}
 )
 
+db.createCollection('users')
+reviewsCollection = db.getCollection("users")
+reviewsCollection.remove({})
+reviewsCollection.insert(
+	{
+		userId: 111,
+		fName: "Jeff",
+		lName: "Smith",
+		password: "pa$$word",
+		email: "abc@123.com",
+		phoneNumber: "5555555",
+		locationPreferences: ["Seattle","London"],
+		datePreferences: ['2021-5-5'],
+		properties: [345],
+	}
+)
+reviewsCollection.insert(
+	{
+		userId: 222,
+		fName: "Ryan",
+		lName: "Smith",
+		password: "pa$$word",
+		email: "123@abc.com",
+		phoneNumber: "5555555",
+		locationPreferences: ["Madrid"],
+		datePreferences: ['2021-5-5'],
+		properties: [123],
+	}
+)
+
