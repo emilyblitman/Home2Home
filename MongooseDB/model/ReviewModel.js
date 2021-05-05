@@ -1,39 +1,40 @@
 "use strict";
 exports.__esModule = true;
-exports.PropertyModel = void 0;
+exports.ReviewModel = void 0;
 var Mongoose = require("mongoose");
 var DataAccess_1 = require("./../DataAccess");
 var mongooseConnection = DataAccess_1.DataAccess.mongooseConnection;
 var mongooseObj = DataAccess_1.DataAccess.mongooseInstance;
-var PropertyModel = /** @class */ (function () {
-    function PropertyModel() {
+var ReviewModel = /** @class */ (function () {
+    function ReviewModel() {
         this.createSchema();
         this.createModel();
     }
-    PropertyModel.prototype.createSchema = function () {
+    ReviewModel.prototype.createSchema = function () {
         this.schema = new Mongoose.Schema({
+            reviewId: Number,
             reviewerId: Number,
-            propertyName: String,
+            propertyId: String,
             comment: String,
-            rating: Number
+            ratting: Number
         }, { collection: 'reviews' });
     };
-    PropertyModel.prototype.createModel = function () {
+    ReviewModel.prototype.createModel = function () {
         this.model = mongooseConnection.model("Review", this.schema);
     };
-    PropertyModel.prototype.retrieveAllReviews = function (response) {
+    ReviewModel.prototype.retrieveAllReviews = function (response) {
         var query = this.model.find({});
         query.exec(function (err, itemArray) {
             response.json(itemArray);
         });
     };
-    PropertyModel.prototype.retrieveReviewDetails = function (response, filter) {
+    ReviewModel.prototype.retrieveReviewDetails = function (response, filter) {
         var query = this.model.findOne(filter);
         query.exec(function (err, itemArray) {
             response.json(itemArray);
         });
     };
-    PropertyModel.prototype.retrieveReviewCount = function (response, filter) {
+    ReviewModel.prototype.retrieveReviewCount = function (response, filter) {
         var query = this.model.findOne(filter);
         query.exec(function (err, innerReviewList) {
             if (err) {
@@ -51,6 +52,6 @@ var PropertyModel = /** @class */ (function () {
             }
         });
     };
-    return PropertyModel;
+    return ReviewModel;
 }());
-exports.PropertyModel = PropertyModel;
+exports.ReviewModel = ReviewModel;

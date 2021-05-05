@@ -18,6 +18,7 @@ class ReviewModel {
     public createSchema(): void {
         this.schema = new Mongoose.Schema(
             {
+                reviewId: Number,
                 reviewerId: Number,
                 propertyId: String,
                 comment: String,

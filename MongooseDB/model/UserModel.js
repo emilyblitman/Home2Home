@@ -18,13 +18,19 @@ var UserModel = /** @class */ (function () {
             password: String,
             email: String,
             phoneNumber: String,
-            locationPreferences: [{ city: String }],
-            datePreferences: [{ dates: Date }],
-            properties: [{ propertyId: Number }]
+            locationPreferences: [String],
+            datePreferences: [Date],
+            properties: [Number]
         }, { collection: 'users' });
     };
     UserModel.prototype.createModel = function () {
         this.model = mongooseConnection.model("User", this.schema);
+    };
+    UserModel.prototype.retrieveAllUsers = function (response) {
+        var query = this.model.find({});
+        query.exec(function (err, itemArray) {
+            response.json(itemArray);
+        });
     };
     UserModel.prototype.retrieveUserDetails = function (response, filter) {
         var query = this.model.findOne(filter);

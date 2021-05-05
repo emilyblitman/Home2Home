@@ -12,6 +12,9 @@ var bodyParser = require("body-parser");
 var ListModel_1 = require("./model/ListModel");
 var TaskModel_1 = require("./model/TaskModel");
 var PropertyModel_1 = require("./model/PropertyModel");
+var UserModel_1 = require("./model/UserModel");
+var BookingModel_1 = require("./model/BookingModel");
+var ReviewModel_1 = require("./model/ReviewModel");
 //import {DataAccess} from './DataAccess';
 // Creates and configures an ExpressJS web server.
 var App = /** @class */ (function () {
@@ -24,6 +27,9 @@ var App = /** @class */ (function () {
         this.Lists = new ListModel_1.ListModel();
         this.Tasks = new TaskModel_1.TaskModel();
         this.Properties = new PropertyModel_1.PropertyModel();
+        this.Users = new UserModel_1.UserModel();
+        this.Bookings = new BookingModel_1.BookingModel();
+        this.Reviews = new ReviewModel_1.ReviewModel();
     }
     // Configure Express middleware.
     App.prototype.middleware = function () {
@@ -35,32 +41,6 @@ var App = /** @class */ (function () {
     App.prototype.routes = function () {
         var _this = this;
         var router = express.Router();
-        //router.get('/app/list/:listId/count', (req, res) => {
-        //    var id = req.params.listId;
-        //    console.log('Query single list with id: ' + id);
-        //    this.Tasks.retrieveTasksCount(res, {listId: id});
-        //});
-        //router.post('/app/list/', (req, res) => {
-        //    console.log(req.body);
-        //    var jsonObj = req.body;
-        //    //jsonObj.listId = this.idGenerator;
-        //    this.Lists.model.create([jsonObj], (err) => {
-        //        if (err) {
-        //            console.log('object creation failed');
-        //        }
-        //    });
-        //    res.send(this.idGenerator.toString());
-        //    this.idGenerator++;
-        //});
-        //router.get('/app/list/:listId', (req, res) => {
-        //    var id = req.params.listId;
-        //    console.log('Query single list with id: ' + id);
-        //    this.Tasks.retrieveTasksDetails(res, {listId: id});
-        //});
-        //router.get('/app/list/', (req, res) => {
-        //    console.log('Query All list');
-        //    this.Lists.retrieveAllLists(res);
-        //});
         router.get('/app/properties/', function (req, res) {
             console.log('Query All properties');
             _this.Properties.retrieveAllProperties(res);
@@ -82,10 +62,69 @@ var App = /** @class */ (function () {
             res.send(_this.idGenerator.toString());
             _this.idGenerator++;
         });
-        //router.get('/app/listcount', (req, res) => {
-        //  console.log('Query the number of list elements in db');
-        //  this.Lists.retrieveListCount(res);
-        //});
+        router.get('/app/users/', function (req, res) {
+            console.log('Query All users');
+            _this.Users.retrieveAllUsers(res);
+        });
+        router.get('/app/users/:userId', function (req, res) {
+            var id = req.params.userId;
+            console.log('Query single list with id: ' + id);
+            _this.Users.retrieveUserDetails(res, { userId: id });
+        });
+        router.post('/app/users/', function (req, res) {
+            console.log(req.body);
+            var jsonObj = req.body;
+            //jsonObj.listId = this.idGenerator;
+            _this.Users.model.create([jsonObj], function (err) {
+                if (err) {
+                    console.log('object creation failed');
+                }
+            });
+            res.send(_this.idGenerator.toString());
+            _this.idGenerator++;
+        });
+        router.get('/app/bookings/', function (req, res) {
+            console.log('Query All bookings');
+            _this.Bookings.retrieveAllBookings(res);
+        });
+        router.get('/app/bookings/:bookingId', function (req, res) {
+            var id = req.params.bookingId;
+            console.log('Query single list with id: ' + id);
+            _this.Bookings.retrieveBookingDetails(res, { bookingId: id });
+        });
+        router.post('/app/bookings/', function (req, res) {
+            console.log(req.body);
+            var jsonObj = req.body;
+            //jsonObj.listId = this.idGenerator;
+            _this.Bookings.model.create([jsonObj], function (err) {
+                if (err) {
+                    console.log('object creation failed');
+                }
+            });
+            res.send(_this.idGenerator.toString());
+            _this.idGenerator++;
+        });
+        router.get('/app/reviews/', function (req, res) {
+            console.log('Query All bookings');
+            _this.Reviews.retrieveAllReviews(res);
+        });
+        router.get('/app/reviews/:reviewId', function (req, res) {
+            var id = req.params.reviewId;
+            console.log('Query single list with id: ' + id);
+            _this.Reviews.retrieveReviewDetails(res, { reviewId: id });
+        });
+        router.post('/app/reviews/', function (req, res) {
+            console.log(req.body);
+            var jsonObj = req.body;
+            //jsonObj.listId = this.idGenerator;
+            _this.Reviews.model.create([jsonObj], function (err) {
+                if (err) {
+                    console.log('object creation failed');
+                }
+            });
+            res.send(_this.idGenerator.toString());
+            _this.idGenerator++;
+        });
         this.expressApp.use('/', router);
         this.expressApp.use('/app/json/', express.static(__dirname + '/app/json'));
         this.expressApp.use('/images', express.static(__dirname + '/img'));

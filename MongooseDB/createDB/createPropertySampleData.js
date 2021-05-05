@@ -33,6 +33,7 @@ reviewsCollection = db.getCollection("reviews")
 reviewsCollection.remove({})
 reviewsCollection.insert(
 	{
+		reviewId: 1,
 		reveiwerId: 111,
 		proeprtyId: 123,
 		comment: "very nice",
@@ -41,6 +42,7 @@ reviewsCollection.insert(
 )
 reviewsCollection.insert(
 	{
+		reviewId: 2,
 		reveiwerId: 222,
 		proeprtyId: 345,
 		comment: "house",
@@ -59,9 +61,9 @@ usersCollection.insert(
 		password: "pa$$word",
 		email: "abc@123.com",
 		phoneNumber: "5555555",
-		locationPreferences: ["Seattle","London"],
+		locationPreferences: ["seattle", "London"],
 		datePreferences: ['2021-5-5'],
-		properties: [345],
+		properties: [123]
 	}
 )
 usersCollection.insert(
@@ -74,7 +76,7 @@ usersCollection.insert(
 		phoneNumber: "5555555",
 		locationPreferences: ["Madrid"],
 		datePreferences: ['2021-5-5'],
-		properties: [123],
+		properties: [345]
 	}
 )
 
