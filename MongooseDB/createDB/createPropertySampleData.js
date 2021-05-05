@@ -27,3 +27,24 @@ propertiesCollection.insert(
 }
 )
 
+
+db.createCollection('reviews')
+reviewsCollection = db.getCollection("reviews")
+reviewsCollection.remove({})
+reviewsCollection.insert(
+	{
+		reveiwerId: 111,
+		proeprtyId: 123,
+		comment: "very nice",
+		ratting: 5,
+	}
+)
+reviewsCollection.insert(
+	{
+		reveiwerId: 222,
+		proeprtyId: 345,
+		comment: "house",
+		ratting: 3,
+	}
+)
+
