@@ -97,6 +97,54 @@ class App {
        this.idGenerator++;
     });
 
+    router.get('/app/users/', (req, res) => {
+        console.log('Query All users');
+        this.Users.retrieveAllUsers(res);
+    });
+
+    router.get('/app/users/:userId', (req, res) => {
+        var id = req.params.userId;
+        console.log('Query single list with id: ' + id);
+        this.Users.retrieveUserDetails(res, { userId: id});
+    });
+
+    router.post('/app/users/', (req, res) => {
+       console.log(req.body);
+       var jsonObj = req.body;
+       //jsonObj.listId = this.idGenerator;
+        this.Users.model.create([jsonObj], (err) => {
+           if (err) {
+               console.log('object creation failed');
+           }
+       });
+       res.send(this.idGenerator.toString());
+       this.idGenerator++;
+    });
+
+    router.get('/app/bookings/', (req, res) => {
+        console.log('Query All bookings');
+        this.Bookings.retrieveAllBookings(res);
+    });
+
+    router.get('/app/bookings/:bookingId', (req, res) => {
+        var id = req.params.bookingId;
+        console.log('Query single list with id: ' + id);
+        this.Bookings.retrieveBookingDetails(res, { bookingId: id});
+    });
+
+    router.post('/app/bookings/', (req, res) => {
+       console.log(req.body);
+       var jsonObj = req.body;
+       //jsonObj.listId = this.idGenerator;
+        this.Bookings.model.create([jsonObj], (err) => {
+           if (err) {
+               console.log('object creation failed');
+           }
+       });
+       res.send(this.idGenerator.toString());
+       this.idGenerator++;
+    });
+
     //router.get('/app/listcount', (req, res) => {
     //  console.log('Query the number of list elements in db');
     //  this.Lists.retrieveListCount(res);
