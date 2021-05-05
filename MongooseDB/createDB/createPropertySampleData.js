@@ -49,9 +49,9 @@ reviewsCollection.insert(
 )
 
 db.createCollection('users')
-reviewsCollection = db.getCollection("users")
-reviewsCollection.remove({})
-reviewsCollection.insert(
+usersCollection = db.getCollection("users")
+usersCollection.remove({})
+usersCollection.insert(
 	{
 		userId: 111,
 		fName: "Jeff",
@@ -64,7 +64,7 @@ reviewsCollection.insert(
 		properties: [345],
 	}
 )
-reviewsCollection.insert(
+usersCollection.insert(
 	{
 		userId: 222,
 		fName: "Ryan",
@@ -78,3 +78,30 @@ reviewsCollection.insert(
 	}
 )
 
+db.createCollection('bookings')
+bookingsCollection = db.getCollection("bookings")
+bookingsCollection.remove({})
+bookingsCollection.insert(
+	{
+		bookingId: 1,
+		userA: 111,
+		userB: 222,
+		propertyA: 123,
+		propertyB: 345,
+		tripDates: "2021-5-5",
+		dateRequested: "2021-4-5",
+		dateConfirmed: "2021-4-6",
+	}
+)
+bookingsCollection.insert(
+	{
+		bookingId: 2,
+		userA: 333,
+		userB: 444,
+		propertyA: 567,
+		propertyB: 789,
+		tripDates: "2022-1-2",
+		dateRequested: "2021-5-5",
+		dateConfirmed: "2021-5-5",
+	}
+)
