@@ -6,7 +6,7 @@ import { STATUS_CODES } from "http";
 let mongooseConnection = DataAccess.mongooseConnection;
 let mongooseObj = DataAccess.mongooseInstance;
 
-class PropertyModel {
+class ReviewModel {
     public schema:any;
     public model:any;
 
@@ -19,9 +19,9 @@ class PropertyModel {
         this.schema = new Mongoose.Schema(
             {
                 reviewerId: Number,
-                propertyName: String,
+                propertyId: String,
                 comment: String,
-                rating: Number
+                ratting: Number
             }, {collection: 'reviews'}
         );
     }
@@ -64,4 +64,4 @@ class PropertyModel {
     }
 
 }
-export {PropertyModel};
+export {ReviewModel};
