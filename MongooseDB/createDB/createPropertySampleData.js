@@ -1,8 +1,8 @@
 db = db.getSiblingDB('propertySample')
 db.createCollection('properties')
-listsCollection = db.getCollection("properties")
-listsCollection.remove({})
-listsCollection.insert(
+propertiesCollection = db.getCollection("properties")
+propertiesCollection.remove({})
+propertiesCollection.insert(
 	{
 		propertyId: 123,
 		propertyName: "Ryans House",
@@ -14,7 +14,7 @@ listsCollection.insert(
 		averageRating: 5
 }
 )
-listsCollection.insert(
+propertiesCollection.insert(
 	{
 		propertyId: 345,
 		propertyName: "Jeffs House",
