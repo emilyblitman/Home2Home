@@ -1,15 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\classSample\\todo-app",
-    "\\classSample\\todo-app\\e2e",
-    "\\classSample\\todo-app\\src\\app",
-    "\\classSample\\todoApp-angular-material\\expressServer",
-    "\\db",
-    "\\expressServer",
-    "\\mongoDB\\createDB",
-    "\\MongooseDB"
+    "\\MongooseDB",
+    "\\MongooseDB\\pages"
   ],
-  "SelectedNode": "\\MongooseDB\\tsconfig.json",
+  "SelectedNode": "\\MongooseDB\\pages\\home2home-profilepage.html",
   "PreviewInSolutionExplorer": false
 }
