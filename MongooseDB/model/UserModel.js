@@ -18,9 +18,9 @@ var UserModel = /** @class */ (function () {
             password: String,
             email: String,
             phoneNumber: String,
-            locationPreferences: Array,
-            datePreferences: Array,
-            properties: Array
+            locationPreferences: [{ city: String }],
+            datePreferences: [{ dates: Date }],
+            properties: [{ propertyId: Number }]
         }, { collection: 'users' });
     };
     UserModel.prototype.createModel = function () {

@@ -25,9 +25,9 @@ class UserModel {
                 password: String,
                 email: String,
                 phoneNumber: String,
-                locationPreferences: Array,
-                datePreferences: Array,
-                properties: Array
+                locationPreferences: [{ city: String }],
+                datePreferences: [{ dates: Date }],
+                properties: [{ propertyId: Number }],
             }, {collection: 'users'}
         );
     }

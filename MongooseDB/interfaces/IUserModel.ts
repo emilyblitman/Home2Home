@@ -7,9 +7,9 @@ interface IUserModel extends Mongoose.Document {
   password: string,
   email: string,
   phoneNumber: string,
-  locationPreferences: array,
-  datePreferences: array,
-  properties: array
+  locationPreferences: [{city:string}],
+  datePreferences: [{dates:Date}],
+  properties: [{propertyId:number}],
 }
 
 export {IUserModel};
