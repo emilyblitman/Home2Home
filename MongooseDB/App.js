@@ -9,8 +9,6 @@ var logger = require("morgan");
 var bodyParser = require("body-parser");
 //var MongoClient = require('mongodb').MongoClient;
 //var Q = require('q');
-var ListModel_1 = require("./model/ListModel");
-var TaskModel_1 = require("./model/TaskModel");
 var PropertyModel_1 = require("./model/PropertyModel");
 var UserModel_1 = require("./model/UserModel");
 var BookingModel_1 = require("./model/BookingModel");
@@ -24,8 +22,6 @@ var App = /** @class */ (function () {
         this.middleware();
         this.routes();
         this.idGenerator = 102;
-        this.Lists = new ListModel_1.ListModel();
-        this.Tasks = new TaskModel_1.TaskModel();
         this.Properties = new PropertyModel_1.PropertyModel();
         this.Users = new UserModel_1.UserModel();
         this.Bookings = new BookingModel_1.BookingModel();
@@ -47,13 +43,13 @@ var App = /** @class */ (function () {
         });
         router.get('/app/properties/:propertyId', function (req, res) {
             var id = req.params.propertyId;
-            console.log('Query single list with id: ' + id);
+            console.log('Query single property with id: ' + id);
             _this.Properties.retrievePropertyDetails(res, { propertyId: id });
         });
         router.post('/app/properties/', function (req, res) {
             console.log(req.body);
             var jsonObj = req.body;
-            //jsonObj.listId = this.idGenerator;
+            //jsonObj.propertyId = this.idGenerator;
             _this.Properties.model.create([jsonObj], function (err) {
                 if (err) {
                     console.log('object creation failed');
@@ -68,13 +64,13 @@ var App = /** @class */ (function () {
         });
         router.get('/app/users/:userId', function (req, res) {
             var id = req.params.userId;
-            console.log('Query single list with id: ' + id);
+            console.log('Query single user with id: ' + id);
             _this.Users.retrieveUserDetails(res, { userId: id });
         });
         router.post('/app/users/', function (req, res) {
             console.log(req.body);
             var jsonObj = req.body;
-            //jsonObj.listId = this.idGenerator;
+            //jsonObj.userId = this.idGenerator;
             _this.Users.model.create([jsonObj], function (err) {
                 if (err) {
                     console.log('object creation failed');
@@ -89,13 +85,13 @@ var App = /** @class */ (function () {
         });
         router.get('/app/bookings/:bookingId', function (req, res) {
             var id = req.params.bookingId;
-            console.log('Query single list with id: ' + id);
+            console.log('Query single booking with id: ' + id);
             _this.Bookings.retrieveBookingDetails(res, { bookingId: id });
         });
         router.post('/app/bookings/', function (req, res) {
             console.log(req.body);
             var jsonObj = req.body;
-            //jsonObj.listId = this.idGenerator;
+            //jsonObj.bookingId = this.idGenerator;
             _this.Bookings.model.create([jsonObj], function (err) {
                 if (err) {
                     console.log('object creation failed');
@@ -110,13 +106,13 @@ var App = /** @class */ (function () {
         });
         router.get('/app/reviews/:reviewId', function (req, res) {
             var id = req.params.reviewId;
-            console.log('Query single list with id: ' + id);
+            console.log('Query single review with id: ' + id);
             _this.Reviews.retrieveReviewDetails(res, { reviewId: id });
         });
         router.post('/app/reviews/', function (req, res) {
             console.log(req.body);
             var jsonObj = req.body;
-            //jsonObj.listId = this.idGenerator;
+            //jsonObj.reviewId = this.idGenerator;
             _this.Reviews.model.create([jsonObj], function (err) {
                 if (err) {
                     console.log('object creation failed');

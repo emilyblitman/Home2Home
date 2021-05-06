@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\MongooseDB",
+    "\\MongooseDB\\createDB",
+    "\\MongooseDB\\img",
     "\\MongooseDB\\pages"
   ],
-  "SelectedNode": "\\MongooseDB\\pages\\home2home-profilepage.html",
+  "SelectedNode": "\\MongooseDB\\pages\\index.html",
   "PreviewInSolutionExplorer": false
 }
