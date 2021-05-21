@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { Home2homeapiService } from './home2homeapi.service';
+import { Home2homeapiService } from 'app/home2homeapi.service';
 
 describe('Home2homeapiService', () => {
   let service: Home2homeapiService;
