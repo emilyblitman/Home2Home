@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
+import { routing } from './app.router'
 import { AppComponent } from './app.component';
 import { PropertyComponent } from './property/property.component';
 import { BookingComponent } from './booking/booking.component';
@@ -16,7 +15,7 @@ import { TravelerComponent } from './traveler/traveler.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    routing,
   ],
   providers: [],
   bootstrap: [AppComponent]
