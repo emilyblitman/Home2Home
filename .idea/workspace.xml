@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:ryaneakins" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="58efc178-d35d-47e0-83a5-0e191dd3ba8a" name="Default Changelist" comment="Routing is working!">
+      <change afterPath="$PROJECT_DIR$/home2home/src/app/share/IBookingModelAngular.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home2home/src/app/share/IPropertyModelAngular.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home2home/src/app/share/ITravelerModelAngular.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongooseDB/db/collection-11-739384605608910590.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongooseDB/db/collection-13-739384605608910590.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongooseDB/db/collection-15-739384605608910590.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongooseDB/db/collection-17-739384605608910590.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongooseDB/db/collection-19-739384605608910590.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongooseDB/db/collection-21-739384605608910590.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongooseDB/db/collection-23-739384605608910590.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongooseDB/db/index-12-739384605608910590.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongooseDB/db/index-14-739384605608910590.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongooseDB/db/index-16-739384605608910590.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongooseDB/db/index-18-739384605608910590.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongooseDB/db/index-20-739384605608910590.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongooseDB/db/index-22-739384605608910590.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongooseDB/db/index-24-739384605608910590.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home2home/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/home2home/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home2home/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/home2home/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home2home/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/home2home/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home2home/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/home2home/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home2home/src/app/app.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/home2home/src/app/app.router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home2home/src/app/home2homeapi.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/home2home/src/app/home2homeapi.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home2home/src/app/home2homeapi.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/home2home/src/app/home2homeapi.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home2home/src/app/property.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/home2home/src/app/property.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home2home/src/app/property.ts" beforeDir="false" afterPath="$PROJECT_DIR$/home2home/src/app/property.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home2home/src/app/property/property.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/home2home/src/app/property/property.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home2home/src/app/property/property.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/home2home/src/app/property/property.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home2home/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/home2home/tsconfig.app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home2home/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/home2home/tsconfig.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="emily" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1s8FtnzN4GpbOCdlxBeEZevr6QD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/angular/src" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/home2home" />
+      <recent name="$PROJECT_DIR$/home2home/src" />
+      <recent name="$PROJECT_DIR$/angular" />
+      <recent name="$PROJECT_DIR$/" />
+      <recent name="$PROJECT_DIR$/MongooseDB" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/angular/src" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="58efc178-d35d-47e0-83a5-0e191dd3ba8a" name="Default Changelist" comment="" />
+      <created>1620246527833</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620246527833</updated>
+    </task>
+    <task id="LOCAL-00001" summary="test push">
+      <created>1620246556670</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1620246556670</updated>
+    </task>
+    <task id="LOCAL-00002" summary="booking model">
+      <created>1620247780994</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1620247780994</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fixed typos in booking model, added routers">
+      <created>1620249040322</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1620249040322</updated>
+    </task>
+    <task id="LOCAL-00004" summary="home2home-app">
+      <created>1621633866151</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1621633866151</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Routing is working!">
+      <created>1621635353257</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1621635353257</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test push" />
+    <MESSAGE value="booking model" />
+    <MESSAGE value="fixed typos in booking model, added routers" />
+    <MESSAGE value="home2home-app" />
+    <MESSAGE value="Routing is working!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Routing is working!" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="409" y="248" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1621718345641">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state x="409" y="248" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.830@0.23.1440.830" timestamp="1621718345641" />
+    <state x="505" y="147" key="RollbackChangesDialog" timestamp="1621479286486">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state x="505" y="147" key="RollbackChangesDialog/0.23.1440.830@0.23.1440.830" timestamp="1621479286486" />
+    <state x="234" y="78" key="SettingsEditor" timestamp="1621720338536">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state x="234" y="78" key="SettingsEditor/0.23.1440.830@0.23.1440.830" timestamp="1621720338536" />
+    <state x="446" y="178" key="Vcs.Push.Dialog.v2" timestamp="1621635364037">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state x="446" y="178" key="Vcs.Push.Dialog.v2/0.23.1440.830@0.23.1440.830" timestamp="1621635364037" />
+    <state x="436" y="359" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1621634016392">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state x="436" y="359" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.830@0.23.1440.830" timestamp="1621634016392" />
+    <state x="560" y="193" width="632" height="490" key="find.popup" timestamp="1621725665904">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state x="560" y="193" width="632" height="490" key="find.popup/0.23.1440.830@0.23.1440.830" timestamp="1621725665904" />
+    <state x="467" y="249" key="git4idea.branch.GitSmartOperationDialog" timestamp="1621634281363">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state x="467" y="249" key="git4idea.branch.GitSmartOperationDialog/0.23.1440.830@0.23.1440.830" timestamp="1621634281363" />
+    <state x="97" y="102" key="new project wizard" timestamp="1621557833109">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state x="97" y="102" key="new project wizard/0.23.1440.830@0.23.1440.830" timestamp="1621557833109" />
+  </component>
+</project>

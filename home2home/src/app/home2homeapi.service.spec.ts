@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { Home2homeapiService } from 'app/home2homeapi.service';
+import { Home2HomeApiService } from 'app/home2homeapi.service';
 
-describe('Home2homeapiService', () => {
-  let service: Home2homeapiService;
+describe('Home2HomeApiService', () => {
+  let service: Home2HomeApiService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(Home2homeapiService);
+    service = TestBed.inject(Home2HomeApiService);
   });
 
   it('should be created', () => {
