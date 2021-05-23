@@ -10,13 +10,22 @@ export class Home2homeapiService {
 
   constructor(private http: Http) { }
 
-  getHomeListing() {
-    return this.http.get('http://localhost:8080/json/homes.json')
+  getPropertiesIndex() {
+    return this.http.get( 'http://localhost:8080/app/properties')
+    //return this.http.get( '/app/properties/')
+    .map(response => response.json());
+  }
+
+  getProperties(index: string) {
+    return this.http.get( 'http://localhost:8080/app/properties/' + index)
+    //return this.http.get( '/app/properties/' + index)
+  getUserInfoIndex() {
+    return this.http.get('http://localhost:8080/app/users')
       .map((response: any) => response.json());
   }
 
-  getProfile(index: number) {
-    return this.http.get('http://localhost:8080/json/homes/' + index + '.json')
+  getUserInfo(index: number) {
+    return this.http.get('http://localhost:8080/app/users/' + index)
     .map(response => response.json());
   }
 

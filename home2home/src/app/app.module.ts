@@ -6,10 +6,11 @@ import { HttpModule } from '@angular/http';
 import { routing } from './app.router';
 import { APP_BASE_HREF } from '@angular/common';
 
-import { Home2homeapiService } from './home2homeapi.service';
+import { Home2HomeApiService } from './home2homeapi.service';
 import { AppComponent } from './app.component';
-//import { PropertyComponent } from './property/property.component';
+import { PropertyComponent } from './property/property.component';
 import { BookingComponent } from './booking/booking.component';
+import { PropertiesTableComponent } from './property/properties-table/properties-table.component';
 import { TravelerProfileComponent } from './travelerProfile/travelerProfile.component';
 
 @NgModule({
@@ -17,7 +18,9 @@ import { TravelerProfileComponent } from './travelerProfile/travelerProfile.comp
     AppComponent,
     //PropertyComponent,
     BookingComponent,
+    PropertiesTableComponent,
     TravelerProfileComponent
+
   ],
   imports: [
     BrowserModule,
@@ -25,7 +28,7 @@ import { TravelerProfileComponent } from './travelerProfile/travelerProfile.comp
     HttpModule,
     routing,
   ],
-  providers: [ {provide: APP_BASE_HREF, useValue: '/'}, Home2homeapiService ],
+  providers: [ {provide: APP_BASE_HREF, useValue: '/'}, Home2HomeApiService ],
   //providers: [],
   bootstrap: [AppComponent]
 })
