@@ -16,7 +16,7 @@ var DataAccess = /** @class */ (function () {
         this.mongooseInstance = Mongoose.connect(this.DB_CONNECTION_STRING);
         return this.mongooseInstance;
     };
-    DataAccess.DB_CONNECTION_STRING = 'mongodb://dbAdmin:test@localhost:3000/propertySample?authSource=admin';
+    DataAccess.DB_CONNECTION_STRING = 'mongodb://dbAdmin:test@localhost:8080/propertySample?authSource=admin';
     return DataAccess;
 }());
 exports.DataAccess = DataAccess;
