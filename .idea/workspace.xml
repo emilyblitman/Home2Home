@@ -26,7 +26,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58efc178-d35d-47e0-83a5-0e191dd3ba8a" name="Default Changelist" comment="Creating property component">
-      <change beforePath="$PROJECT_DIR$/MongooseDB/pages/home2home-profile-stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home2home-profile-stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home2home/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/home2home/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home2home/src/app/app.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/home2home/src/app/app.router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home2home/src/app/home2homeapi.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/home2home/src/app/home2homeapi.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home2home/src/app/property/property.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/home2home/src/app/property/property.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +40,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="emily" />
+        <entry key="$PROJECT_DIR$" value="EmilyUpdated" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -59,15 +63,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/angular/src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/home2home" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/home2home/src" />
       <recent name="$PROJECT_DIR$/angular" />
       <recent name="$PROJECT_DIR$/" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/angular/src" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

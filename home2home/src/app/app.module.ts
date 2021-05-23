@@ -16,7 +16,7 @@ import { TravelerProfileComponent } from './travelerProfile/travelerProfile.comp
 @NgModule({
   declarations: [
     AppComponent,
-    //PropertyComponent,
+    PropertyComponent,
     BookingComponent,
     PropertiesTableComponent,
     TravelerProfileComponent

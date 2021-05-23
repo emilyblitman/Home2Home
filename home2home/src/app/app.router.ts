@@ -1,7 +1,7 @@
 import { Routes, RouterModule } from '@angular/router';
 //import { WelcomeComponent } from './welcome/welcome.component';
 import { TravelerProfileComponent } from './travelerProfile/travelerProfile.component';
-//import { PropertyComponent } from './property/property.component';
+import { PropertyComponent } from './property/property.component';
 import { BookingComponent } from './booking/booking.component';
 
 const routes: Routes = [

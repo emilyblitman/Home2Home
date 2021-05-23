@@ -6,7 +6,7 @@ import 'rxjs/add/operator/map';
 @Injectable({
   providedIn: 'root'
 })
-export class Home2homeapiService {
+export class Home2HomeApiService {
 
   constructor(private http: Http) { }
 
@@ -18,7 +18,10 @@ export class Home2homeapiService {
 
   getProperties(index: string) {
     return this.http.get( 'http://localhost:8080/app/properties/' + index)
+    .map(response => response.json());
     //return this.http.get( '/app/properties/' + index)
+}
+
   getUserInfoIndex() {
     return this.http.get('http://localhost:8080/app/users')
       .map((response: any) => response.json());
