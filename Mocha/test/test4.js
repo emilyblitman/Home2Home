@@ -35,20 +35,15 @@ describe('Test property lists result', function () {
     });
     
 	it('The first entry in the array has known properties', function(){
-	    expect(requestResult[0]).to.include.keys('name');
+		expect(requestResult[0]).to.include.keys('propertyId');
 	    expect(requestResult[0]).to.have.property('_id');
-		expect(response.body[0]).to.have.deep.property('list');
 		expect(response.body).to.not.be.a.string;
 	});
 	it('The elements in the array have the expecte properties', function(){
 		expect(response.body).to.satisfy(
 			function (body) {
 				for (var i = 0; i < body.length; i++) {
-					expect(body[i]).to.have.property('name');
-					expect(body[i]).to.have.property('description');
-					expect(body[i]).to.have.property('listId');
-					expect(body[i]).to.have.property('state').to.have.length(1);
-					expect(body[i]).to.have.property('owner').that.is.a('string');
+					expect(body[i]).to.have.property('propertyId');
 				}
 				return true;
 			});
