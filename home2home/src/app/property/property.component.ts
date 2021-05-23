@@ -15,12 +15,12 @@ export class PropertyComponent implements OnInit {
 
 }
 */
-import 'rxjs/add/operator/switchMap';
+/*import 'rxjs/add/operator/switchMap';
 import 'rxjs/add/operator/map';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
-import { Home2HomeApiService } from '../home2homeapi.service';
+import { Home2homeapiService } from '../home2homeapi.service';
 import ITravelerModelAngular from '../share/ITravelerModelAngular';
 import IPropertyModelAngular from '../share/IPropertyModelAngular';
 //import Item from '../share/Item';
@@ -45,7 +45,7 @@ export class PropertyComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private location: Location,
-    private property$: Home2HomeApiService
+    private property$: Home2homeapiService
   ) {
     this.propertyId = route.snapshot.params['id'];
     property$.getProperties(this.propertyId)
@@ -66,4 +66,4 @@ export class PropertyComponent implements OnInit {
 
   ngOnInit():void {}
 
-}
+}*/

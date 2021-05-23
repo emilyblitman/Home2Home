@@ -1,13 +1,12 @@
 interface ITravelerModelAngular {
-  userId: number,
+  travelerId: number,
   fName: string,
   lName: string,
-  password: string,
-  email: string,
-  phoneNumber: string,
+  propertyName: string,
+  description: string,
   locationPreferences: [string],
   datePreferences: [Date],
-  properties: [number],
+  properties: number,
 }
 
 export default ITravelerModelAngular;
