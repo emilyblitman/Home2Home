@@ -20,18 +20,18 @@ import 'rxjs/add/operator/map';
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
-import { Home2HomeApiService } from '../home2homeapi.service';
+import { Home2homeapiService } from '../home2homeapi.service';
 import ITravelerModelAngular from '../share/ITravelerModelAngular';
 import IPropertyModelAngular from '../share/IPropertyModelAngular';
 //import Item from '../share/Item';
-
+/*
 @Component({
   moduleId: module.id,
   selector: 'app-property',
   templateUrl: './property.component.html',
   styleUrls: ['./property.component.css']
 })
-/*
+
 export class PropertyComponent implements OnInit {
    propertyId: string;
    propertyName: string;
@@ -45,7 +45,7 @@ export class PropertyComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private location: Location,
-    private property$: Home2HomeApiService
+    private property$: Home2homeapiService
   ) {
     this.propertyId = route.snapshot.params['id'];
     property$.getProperties(this.propertyId)
@@ -84,4 +84,5 @@ export class PropertyComponent implements OnInit {
   ngOnInit() {
   }
 
+}
 }

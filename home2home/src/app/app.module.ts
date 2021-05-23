@@ -10,17 +10,17 @@ import { Home2HomeApiService } from './home2homeapi.service';
 import { AppComponent } from './app.component';
 import { PropertyComponent } from './property/property.component';
 import { BookingComponent } from './booking/booking.component';
-import { TravelerComponent } from './traveler/traveler.component';
 import { PropertiesTableComponent } from './property/properties-table/properties-table.component';
-
+import { TravelerProfileComponent } from './travelerProfile/travelerProfile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PropertyComponent,
+    //PropertyComponent,
     BookingComponent,
-    TravelerComponent,
     PropertiesTableComponent,
+    TravelerProfileComponent
+
   ],
   imports: [
     BrowserModule,
