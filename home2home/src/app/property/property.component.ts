@@ -17,7 +17,7 @@ export class PropertyComponent implements OnInit {
 */
 import 'rxjs/add/operator/switchMap';
 import 'rxjs/add/operator/map';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { Home2HomeApiService } from '../home2homeapi.service';
@@ -31,7 +31,7 @@ import IPropertyModelAngular from '../share/IPropertyModelAngular';
   templateUrl: './property.component.html',
   styleUrls: ['./property.component.css']
 })
-
+/*
 export class PropertyComponent implements OnInit {
    propertyId: string;
    propertyName: string;
@@ -65,5 +65,23 @@ export class PropertyComponent implements OnInit {
   }
 
   ngOnInit():void {}
+
+}
+*/
+export class PropertyComponent implements OnInit {
+  @Input() propertyNumber: number[] = [123, 222];
+  properties: IPropertyModelAngular[];
+
+  constructor(property$: Home2HomeApiService) {
+    property$.getPropertiesIndex()
+    .subscribe(
+      result => this.properties = result,
+      () => {},
+      () => console.log('REST call:' + this.properties)
+    );
+  }
+
+  ngOnInit() {
+  }
 
 }

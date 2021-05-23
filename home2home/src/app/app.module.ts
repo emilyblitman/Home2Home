@@ -11,13 +11,16 @@ import { AppComponent } from './app.component';
 import { PropertyComponent } from './property/property.component';
 import { BookingComponent } from './booking/booking.component';
 import { TravelerComponent } from './traveler/traveler.component';
+import { PropertiesTableComponent } from './property/properties-table/properties-table.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     PropertyComponent,
     BookingComponent,
-    TravelerComponent
+    TravelerComponent,
+    PropertiesTableComponent,
   ],
   imports: [
     BrowserModule,

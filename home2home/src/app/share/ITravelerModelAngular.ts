@@ -7,7 +7,7 @@ interface ITravelerModelAngular {
   phoneNumber: string,
   locationPreferences: [string],
   datePreferences: [Date],
-  properties: [number],
+  properties: number,
 }
 
 export default ITravelerModelAngular;
