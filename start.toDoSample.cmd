@@ -1,1 +1,1 @@
-mongod -port 3000 -dbpath="C:\Users\ryanm\mongoosdb"
+mongod -port 8080 -dbpath="C:\Users\ryanm\mongoosdb"
