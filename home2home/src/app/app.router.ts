@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'travelerProfile/:id', component: TravelerProfileComponent },
   //{ path: 'travelerProfile', component: TravelerProfileComponent },
   //  { path: 'property/:id', component: PropertyComponent},
-  { path: 'booking/:booking_id,', component: BookingComponent },
+  { path: 'booking/:booking_id', component: BookingComponent },
 ];
 
 export const routing = RouterModule.forRoot(routes);
