@@ -1,12 +1,3 @@
-body {
-  //background: linear-gradient(120deg, black, #164A41, #4D774E, #9DC88D) fixed;
-  background: linear-gradient(120deg,#164A41, #4D774E, #9DC88D) fixed;
-  //background: linear-gradient(180deg, #4D774E, #9DC88D) fixed;
-  color: white;
-  font-family: 'Vollkorn', serif;
-  margin-bottom: 50px;
-}
-
 
 .content {
   width: 80%;
@@ -15,28 +6,9 @@ body {
   margin-top: 10px;
   background-color: rgba(157,200,141, 0.5);
   filter: brightness(120%);
-  //background-color: rgba(255,255,255, 0.15);
   padding: 20px 20px 20px 20px;
   border-radius: 6px;
 }
-
-.navbar-dark .navbar-nav .nav-link.active {
-  color: #F1B24A;
-}
-
-
-.navbar-dark {
-  background-color: #transparent;
-  font-size: 20px;
-  //border-bottom: double #164A41;
-  //background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px 0px 20px 20px;
-}
-
-  .navbar-dark .navbar-brand {
-    font-size: 28px;
-    font-variant: small-caps;
-  }
 
 
 #profile-picture {
@@ -45,12 +17,12 @@ body {
 }
 
 .profile-header img, .profile-header h2 {
-  display: inline;
+  display: inline-block;
 }
 
 .profile-header h2 {
   padding-left: 40px;
-  //color: #F1B24A;
+  color: white;
 }
 
 .profile-property {
@@ -103,4 +75,8 @@ body {
   padding-top: 5px;
   text-align: left;
   margin-left: 10px;
+}
+
+.location-preferences, h4 {
+  padding: 10px;
 }

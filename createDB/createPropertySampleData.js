@@ -63,7 +63,8 @@ usersCollection.insert(
 		phoneNumber: "5555555",
 		locationPreferences: ["seattle", "London"],
 		datePreferences: ['2021-5-5'],
-		properties: 123
+		properties: 123,
+		bookings: 1,
 	}
 )
 usersCollection.insert(
@@ -76,7 +77,8 @@ usersCollection.insert(
 		phoneNumber: "5555555",
 		locationPreferences: ["Madrid"],
 		datePreferences: ['2021-5-5'],
-		properties: 345
+		properties: 345,
+		bookings: 1,
 	}
 )
 

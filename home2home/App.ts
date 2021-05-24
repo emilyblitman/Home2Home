@@ -110,6 +110,7 @@ class App {
         this.Bookings.retrieveBookingDetails(res, { bookingId: id});
     });
 
+
     router.post('/app/bookings/', (req, res) => {
        console.log(req.body);
        var jsonObj = req.body;

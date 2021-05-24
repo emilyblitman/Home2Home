@@ -14,3 +14,8 @@
   margin: 10px;
 }
 
+.search-header, .search-location, .search-checkin, .search-checkout, .search-guests {
+  display: inline-block;
+  padding: 4px;
+}
+
