@@ -52,6 +52,48 @@ describe('Test property result', function () {
 	
 });
 
+
+describe('Test property result', function () {
+	//	this.timeout(15000);
+
+	var requestResult;
+	var response;
+
+	before(function (done) {
+		chai.request("http://localhost:8080")
+			.get("/app/properties/123")
+			.end(function (err, res) {
+				requestResult = res.body;
+				response = res;
+				expect(err).to.be.null;
+				expect(res).to.have.status(200);
+				done();
+			});
+	});
+
+	it('Should return an object', function () {
+		expect(response).to.have.status(200);
+		expect(response).to.have.headers;
+	});
+
+	it('The entry has known properties', function () {
+		expect(requestResult).to.include.keys('propertyId');
+		expect(requestResult).to.have.property('_id');
+		expect(response.body).to.not.be.a.string;
+	});
+	it('The elements in the array have the expected properties', function () {
+		expect(response.body).to.satisfy(
+			function (body) {
+
+				expect(body).to.have.property('propertyId');
+				expect(body).to.have.property('propertyName');
+				return true;
+			});
+	});
+
+});
+
+
 describe('Test Travler result', function () {
 	//	this.timeout(15000);
 
