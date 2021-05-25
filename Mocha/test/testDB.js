@@ -10,7 +10,6 @@ var http = require('http');
 chai.use(chaiHttp);
 
 describe('Test property result', function () {
-//	this.timeout(15000);
 
 	var requestResult;
 	var response;
@@ -29,7 +28,6 @@ describe('Test property result', function () {
     
     it('Should return an array object with more than 1 object', function (){
 		expect(response).to.have.status(200);
-//        expect(response.body).to.be.an.object;
 		expect(response.body).to.have.length.above(1);
 		expect(response).to.have.headers;
     });
@@ -54,7 +52,6 @@ describe('Test property result', function () {
 
 
 describe('Test property result', function () {
-	//	this.timeout(15000);
 
 	var requestResult;
 	var response;
@@ -95,7 +92,6 @@ describe('Test property result', function () {
 
 
 describe('Test Travler result', function () {
-	//	this.timeout(15000);
 
 	var requestResult;
 	var response;
@@ -114,7 +110,6 @@ describe('Test Travler result', function () {
 
 	it('Should return an array object with more than 1 object', function () {
 		expect(response).to.have.status(200);
-		//        expect(response.body).to.be.an.object;
 		expect(response.body).to.have.length.above(1);
 		expect(response).to.have.headers;
 	});

@@ -4,9 +4,6 @@ import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { Home2HomeApiService } from '../home2homeapi.service';
-//import ITravelerModelAngular from '../share/ITravelerModelAngular';
-//import IPropertyModelAngular from '../share/IPropertyModelAngular';
-//import Item from '../share/Item';
 @Component({
   selector: 'app-travelerProfile',
   templateUrl: './travelerProfile.component.html',
@@ -36,7 +33,6 @@ export class TravelerProfileComponent implements OnInit {
         this.firstName = result.fName;
         this.lastName = result.lName;
         this.propertyId = result.properties;
-        //this.propertyName = user$.getProperties(this.propertyId.toString).result.pro;
         user$.getProperties(this.propertyId.toString())
         .subscribe (
           result => {
@@ -46,7 +42,6 @@ export class TravelerProfileComponent implements OnInit {
           () => {},
           () => {}
         );
-        //this.propertyDescription = user$.getProperties(this.propertyId).description;
         this.locationPreferences = result.locationPreferences;
         this.bookingId = result.bookings;
         user$.getBookingInfo(this.bookingId.toString())
@@ -63,17 +58,7 @@ export class TravelerProfileComponent implements OnInit {
       () => {},
       () => {}
     );
-    /*
 
-    user$.getProperties(this.propertyId.toString())
-    .subscribe (
-      result => {
-        this.propertyName = result.propertyName;
-        this.propertyDescription = result.description;
-      },
-      () => {},
-      () => {}
-    );*/
 
 
 }

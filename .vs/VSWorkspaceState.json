@@ -1,16 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\angular\\expressServer",
-    "\\angular\\src",
-    "\\angular\\src\\app",
-    "\\angular\\src\\app\\lists",
-    "\\angular\\src\\app\\lists\\lists-table",
-    "\\home2home",
-    "\\home2home\\expressServer",
-    "\\home2home\\src",
-    "\\home2home\\src\\assets"
+    "\\createDB",
+    "\\home2home\\src\\app",
+    "\\home2home\\src\\app\\share",
+    "\\Mocha",
+    "\\Mocha\\test"
   ],
-  "SelectedNode": "\\home2home\\src\\app\\travelerProfile\\travelerProfile.component.ts",
+  "SelectedNode": "\\pages",
   "PreviewInSolutionExplorer": false
 }
