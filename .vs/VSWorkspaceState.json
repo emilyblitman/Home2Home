@@ -1,12 +1,15 @@
 {
   "ExpandedNodes": [
     "",
-    "\\createDB",
+    "\\home2home",
+    "\\home2home\\src",
     "\\home2home\\src\\app",
-    "\\home2home\\src\\app\\share",
-    "\\Mocha",
-    "\\Mocha\\test"
+    "\\home2home\\src\\app\\property",
+    "\\home2home\\src\\app\\property\\properties-table",
+    "\\home2home\\src\\app\\travelerProfile",
+    "\\home2home\\src\\assets",
+    "\\home2home\\src\\assets\\img"
   ],
-  "SelectedNode": "\\pages",
+  "SelectedNode": "\\home2home\\src\\app\\travelerProfile\\travelerProfile.component.html",
   "PreviewInSolutionExplorer": false
 }

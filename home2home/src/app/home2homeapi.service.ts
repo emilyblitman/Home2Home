@@ -7,6 +7,7 @@ export class Home2HomeApiService {
 
   constructor(private http: Http) { }
 
+
   getPropertiesIndex() {
     return this.http.get('http://localhost:8080/app/properties')
     .map(response => response.json());

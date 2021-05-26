@@ -20,7 +20,7 @@ export class TravelerProfileComponent implements OnInit {
   bookingId: number;
   bookingLocation: string;
   tripDates: string;
-  //datePreferences:
+ 
   constructor(
     private route: ActivatedRoute,
     private location: Location,
@@ -39,8 +39,7 @@ export class TravelerProfileComponent implements OnInit {
             this.propertyName = result.propertyName;
             this.propertyDescription = result.description;
           },
-          () => {},
-          () => {}
+        
         );
         this.locationPreferences = result.locationPreferences;
         this.bookingId = result.bookings;
@@ -50,13 +49,11 @@ export class TravelerProfileComponent implements OnInit {
             this.bookingLocation = "Italy";
             this.tripDates = result.tripDates;
           },
-          () => {},
-          () => {}
+       
         );
 
       },
-      () => {},
-      () => {}
+    
     );
 
 
