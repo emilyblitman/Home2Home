@@ -38,4 +38,9 @@ export class Home2HomeApiService {
      .map(response => response.json());
  }
 
+ getPropertySearchResults(location: string, guests: string) {
+   return this.http.get('http://localhost:8080/app/searchForHomes/' + location + "-" + guests)
+   .map(response => response.json());
+ }
+
 }
