@@ -14,45 +14,9 @@ import IPropertyModelAngular from '../share/IPropertyModelAngular';
   templateUrl: './property.component.html',
   styleUrls: ['./property.component.css']
 })
-/*
+
 export class PropertyComponent implements OnInit {
-   propertyId: string;
-   propertyName: string;
-   description: string;
-   bedrooms: number;
-   bathrooms: number;
-   sqFeet: number;
-   address: string;
-   averageRating: number;
-
-  constructor(
-    private route: ActivatedRoute,
-    private location: Location,
-    private property$: Home2homeapiService
-  ) {
-    this.propertyId = route.snapshot.params['id'];
-    property$.getProperties(this.propertyId)
-    .subscribe(
-      result => {
-        this.propertyName = result.propertyName;
-        this.description = result.description;
-        this.bedrooms = result.bedrooms;
-        this.bathrooms = result.bathrooms;
-        this.sqFeet = result.sqFeet;
-        this.address = result.address;
-        this.averageRating = result.averageRating;
-      },
-      () => {},
-      () => {}
-    );
-  }
-
-  ngOnInit():void {}
-
-}
-*/
-export class PropertyComponent implements OnInit {
-  @Input() propertyNumber: number[] = [123, 222];
+  @Input() propertyNumber: number[];
   properties: IPropertyModelAngular[];
 
   constructor(property$: Home2HomeApiService) {

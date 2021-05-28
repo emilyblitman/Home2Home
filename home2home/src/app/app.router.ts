@@ -9,7 +9,7 @@ const routes: Routes = [
   { path: 'property', component: PropertyComponent },
   { path: 'travelerProfile/:id', component: TravelerProfileComponent },
   //{ path: 'travelerProfile', component: TravelerProfileComponent },
-  //  { path: 'property/:id', component: PropertyComponent},
+  { path: 'property/:id', component: PropertyComponent},
   { path: 'booking/:booking_id,', component: BookingComponent },
 ];
 

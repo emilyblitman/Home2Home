@@ -2,11 +2,6 @@ import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 
-/*
-@Injectable({
-  providedIn: 'root'
-})
-*/
 @Injectable()
 export class Home2HomeApiService {
 
@@ -14,14 +9,12 @@ export class Home2HomeApiService {
 
   getPropertiesIndex() {
     return this.http.get('http://localhost:8080/app/properties')
-    //return this.http.get( '/app/properties/')
     .map(response => response.json());
   }
 
   getProperties(index: string) {
     return this.http.get('http://localhost:8080/app/properties/' + index)
     .map(response => response.json());
-    //return this.http.get( '/app/properties/' + index)
 }
 
   getUserInfoIndex() {
