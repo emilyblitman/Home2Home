@@ -29,7 +29,8 @@ import { TravelerProfileComponent } from './travelerProfile/travelerProfile.comp
     routing,
   ],
   providers: [ {provide: APP_BASE_HREF, useValue: '/'}, Home2HomeApiService ],
-  //providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+

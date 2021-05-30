@@ -4,7 +4,7 @@ propertiesCollection = db.getCollection("properties")
 propertiesCollection.remove({})
 propertiesCollection.insert(
 	{
-		propertyId: 123,
+		propertyId: 345,
 		propertyName: "Ryans House",
 		description: "Seattle House",
 		bedrooms: 3,
@@ -16,7 +16,7 @@ propertiesCollection.insert(
 )
 propertiesCollection.insert(
 	{
-		propertyId: 345,
+		propertyId: 123,
 		propertyName: "Jeffs House",
 		description: "Seattle House",
 		bedrooms: 2,

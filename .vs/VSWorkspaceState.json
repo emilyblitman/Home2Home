@@ -1,16 +1,15 @@
 {
   "ExpandedNodes": [
     "",
-    "\\angular\\expressServer",
-    "\\angular\\src",
-    "\\angular\\src\\app",
-    "\\angular\\src\\app\\lists",
-    "\\angular\\src\\app\\lists\\lists-table",
     "\\home2home",
-    "\\home2home\\expressServer",
     "\\home2home\\src",
-    "\\home2home\\src\\assets"
+    "\\home2home\\src\\app",
+    "\\home2home\\src\\app\\property",
+    "\\home2home\\src\\app\\property\\properties-table",
+    "\\home2home\\src\\app\\travelerProfile",
+    "\\home2home\\src\\assets",
+    "\\home2home\\src\\assets\\img"
   ],
-  "SelectedNode": "\\home2home\\src\\app\\travelerProfile\\travelerProfile.component.ts",
+  "SelectedNode": "\\home2home\\src\\app\\travelerProfile\\travelerProfile.component.html",
   "PreviewInSolutionExplorer": false
 }

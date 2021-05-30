@@ -75,6 +75,14 @@ class App {
        this.idGenerator++;
     });
 
+    router.get('/app/searchForHomes/:location-:guests', (req, res) => {
+        var location = req.params.location;
+        var checkin = req.params.checkin;
+        var checkout = req.params.checkout;
+        var guests = req.params.guests;
+        this.Properties.searchProperties(res, { 'bedrooms': guests })
+    });
+
     router.get('/app/users/', (req, res) => {
         console.log('Query All users');
         this.Users.retrieveAllUsers(res);

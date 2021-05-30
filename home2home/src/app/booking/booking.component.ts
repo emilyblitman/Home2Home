@@ -42,7 +42,7 @@ export class BookingComponent implements OnInit {
       result => {
         this.propertyA = result.propertyA;
         this.propertyB = result.propertyB;
-        /*
+
         booking$.getProperties(this.propertyA.toString())
         .subscribe(
           result => {
@@ -71,7 +71,7 @@ export class BookingComponent implements OnInit {
              () => {},
              () => {}
          );
-*/
+
       },
       () => {},
       () => {}

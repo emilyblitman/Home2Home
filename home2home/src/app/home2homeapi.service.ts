@@ -7,6 +7,7 @@ export class Home2HomeApiService {
 
   constructor(private http: Http) { }
 
+
   getPropertiesIndex() {
     return this.http.get('http://localhost:8080/app/properties')
     .map(response => response.json());
@@ -35,6 +36,11 @@ export class Home2HomeApiService {
  getBookingsIndex() {
      return this.http.get('http://localhost:8080/app/bookings/')
      .map(response => response.json());
+ }
+
+ getPropertySearchResults(location: string, guests: string) {
+   return this.http.get('http://localhost:8080/app/searchForHomes/' + location + "-" + guests)
+   .map(response => response.json());
  }
 
 }

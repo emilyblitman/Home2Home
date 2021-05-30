@@ -14,8 +14,18 @@
   margin: 10px;
 }
 
-.search-header, .search-location, .search-checkin, .search-checkout, .search-guests {
+#guests {
+  width: 50px;
+}
+
+.search-header, .search-location, .search-checkin, .search-checkout, .search-guests, .search-btn {
   display: inline-block;
   padding: 4px;
+}
+
+.search-header {
+  display: flex; 
+  flex-direction: row;
+  align-items: flex-start;
 }
 
