@@ -1,0 +1,27 @@
+{
+  "name": "home2home",
+  "version": "1.0.0",
+  "description": "This directory contains one express servers: * Server.js + App.js - Encapsulated Node/Express web server w/ Mongo Access",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiriamJM/Home2Home.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MiriamJM/Home2Home/issues"
+  },
+  "homepage": "https://github.com/MiriamJM/Home2Home#readme",
+  "dependencies": {
+    "azure": "^2.3.1-preview",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.12",
+    "morgan": "^1.10.0",
+    "url": "^0.11.0"
+  }
+}
