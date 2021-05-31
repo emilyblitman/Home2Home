@@ -25,9 +25,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58efc178-d35d-47e0-83a5-0e191dd3ba8a" name="Default Changelist" comment="deployment">
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="58efc178-d35d-47e0-83a5-0e191dd3ba8a" name="Default Changelist" comment="angularDist">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,18 +55,19 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/angular/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/home2home/dist/home2home" />
     <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/angularDist" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/home2home" />
       <recent name="$PROJECT_DIR$/home2home/src" />
       <recent name="$PROJECT_DIR$/angular" />
-      <recent name="$PROJECT_DIR$/" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/home2home/dist/home2home" />
       <recent name="$PROJECT_DIR$/angular/src" />
     </key>
   </component>
@@ -150,7 +150,28 @@
       <option name="project" value="LOCAL" />
       <updated>1622431007110</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="deployment">
+      <created>1622431430493</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1622431430493</updated>
+    </task>
+    <task id="LOCAL-00012" summary="dist route update">
+      <created>1622431877137</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1622431877137</updated>
+    </task>
+    <task id="LOCAL-00013" summary="angularDist">
+      <created>1622432581410</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1622432581410</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -176,7 +197,9 @@
     <MESSAGE value="commit files" />
     <MESSAGE value="changed directory structure" />
     <MESSAGE value="deployment" />
-    <option name="LAST_COMMIT_MESSAGE" value="deployment" />
+    <MESSAGE value="dist route update" />
+    <MESSAGE value="angularDist" />
+    <option name="LAST_COMMIT_MESSAGE" value="angularDist" />
   </component>
   <component name="WindowStateProjectService">
     <state x="409" y="248" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1621718345641">
@@ -203,10 +226,10 @@
       <screen x="0" y="23" width="1440" height="830" />
     </state>
     <state x="234" y="78" key="SettingsEditor/0.23.1440.830@0.23.1440.830" timestamp="1621720338536" />
-    <state x="446" y="178" key="Vcs.Push.Dialog.v2" timestamp="1622431011321">
+    <state x="446" y="178" key="Vcs.Push.Dialog.v2" timestamp="1622432618050">
       <screen x="0" y="23" width="1440" height="829" />
     </state>
-    <state x="446" y="178" key="Vcs.Push.Dialog.v2/0.23.1440.829@0.23.1440.829" timestamp="1622431011321" />
+    <state x="446" y="178" key="Vcs.Push.Dialog.v2/0.23.1440.829@0.23.1440.829" timestamp="1622432618050" />
     <state x="446" y="178" key="Vcs.Push.Dialog.v2/0.23.1440.830@0.23.1440.830" timestamp="1621726355176" />
     <state x="436" y="358" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1622428235072">
       <screen x="0" y="23" width="1440" height="829" />
